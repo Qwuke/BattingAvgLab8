@@ -46,7 +46,7 @@ public class BatMain {
 	}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Main method for holding mostly validation and variables used throughout the program
 		Scanner sc = new Scanner(System.in);
 		String valid = "y"; // String for validating whether or not to continue based on y or n
 		System.out.println("Welcome to the Batting Average Calculator");
@@ -62,7 +62,7 @@ public class BatMain {
 			System.out.println("0=Out, 1=Single, 2=Double, 3=Triple, 4=Home run");
 			
 			
-			int[] arrAtBats = setAtBats(numAtBat, sc);
+			int[] arrAtBats = setAtBats(numAtBat, sc);//Simultaneously asks for user input and then sets the array which we will use for calculating batting average
 			
 			System.out.println("");
 			System.out.print("Batting average: "); 

@@ -7,12 +7,12 @@
 
 package net.qwuke;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class BatMain {
 
 	public static int[] setAtBats(int numBats, Scanner scan) {
+		//Takes a scanner and the number of times at bat, uses this to validate and then insert values into an array which we can use to calculate bat avg
 		int[] arrBats = new int[numBats];
 		for (int i = 0; i<arrBats.length; i++) {
 			 arrBats[i] = Validator.getInt(scan, "Result for at-bat: ", 0, 4);
